@@ -41,6 +41,7 @@ $(document).bind('pagecreate', function() {
 			$("#page-flights ul").listview('refresh');
 		},
 		error: function () {
+			//navigator.notification.alert("Error", alertCallback, "Err", [buttonName]);
 			$('#page-flights .loader-li a').html('ვერ მოხერხდა სერვერთან დაკავშირება :(<br/><span class="flight-text">გადაამოწმეთ კავშირი ინტერნეტთან, ან სცადეთ მოგვიანებით.</span>').click(function() {
 				window.location.reload();
 			});
@@ -56,7 +57,7 @@ $(document).bind('pagecreate', function() {
 		success: function (response) {
 			$('#page-blog .loader-li').remove();
 			for (var i=0; i<response.length; i++) {					
-				$("#page-blog ul").append('<li><a target="_blank" href="javascript:navigator.app.loadUrl(\''
+				$("#page-blog ul").append('<li><a target="_blank" href="javascript:openLink(\''
 					+response[i]['url']+'\')">'
 					+response[i]['text']+'</a></li>');
 			}
@@ -90,7 +91,12 @@ $(document).bind('pagecreate', function() {
 		$("#page-info").delay(250).fadeIn(200);
 	});
 	
-	$(window).resize(function () {
-		
-	});
+	/*$(window).resize(function () {
+	});*/
 });
+
+/* Functions */
+function openLink(url) {
+	navigator.app.loadUrl(url, {openExternal: true});
+	return false;
+}
