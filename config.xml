@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+	
+	<widget xmlns = "http://www.w3.org/ns/widgets"
+	xmlns:gap = "http://phonegap.com/ns/1.0"
+	id        = "com.stichoza.usa2georgia"
+	versionCode="4" 
+	version   = "1.1.2">
+	
+	<name>USA2Georgia Mobile</name>
+	<description>An unofficial app for USA2Georgia.com flight schedule and blog posts.</description>
+	<author href="https://stichoza.com" email="android@stichoza.com">Stichoza</author>
+	
+	<preference name="phonegap-version" value="2.2.0" />
+	<preference name="target-device" value="universal" />
+	<preference name="fullscreen" value="false" />
+	<preference name="permissions" value="none"/>
+	<preference name="stay-in-webview" value="false" />
+	
+	<icon src="icons/android/ldpi.png" gap:platform="android" gap:density="ldpi" />
+	<icon src="icons/android/mdpi.png" gap:platform="android" gap:density="mdpi" />
+	<icon src="icons/android/hdpi.png" gap:platform="android" gap:density="hdpi" />
+	<icon src="icons/android/xhdpi.png" gap:platform="android" gap:density="xhdpi" />
+
+	<!-- <feature name="http://api.phonegap.com/1.0/network"/> -->
+	
+	<access origin="http://stichoza.com" subdomains="true" />
+	<access origin="*usa2georgia.com" browserOnly="true"/> 
+	<!-- <access origin="*" /> -->
+	
+</widget>

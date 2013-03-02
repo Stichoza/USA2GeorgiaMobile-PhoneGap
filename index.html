@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>USA2Georgia</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
+	<!-- CSS StyleSheets -->
+	<link rel="stylesheet" href="res/styles/normalize.min.css" />
+	<link rel="stylesheet" href="res/styles/custom-icons.css" />
+	<link rel="stylesheet" href="libs/jquery-mobile/themes/usa2georgia.min.css" />
+	<link rel="stylesheet" href="libs/jquery-mobile/jquery.mobile.structure-1.2.0.min.css" />
+	<link rel="stylesheet" href="res/styles/main-style.css" />
+	<!-- JavaScript -->
+	<script src="phonegap.js"></script>
+	<script src="libs/jquery/jquery-1.8.3.min.js"></script>
+	<script src="libs/jquery-mobile/jquery.mobile-1.2.0.min.js"></script>
+	<script src="src/main.js"></script>
+</head>
+<body>
+
+<div data-role="page">
+	<div id="separator-a">
+		<div id="header" data-role="header" data-theme="b">
+			<img src="res/drawable/header-logo-u2g.png" width="152" height="59" alt="" style="margin: 5px;"/>
+			<a href="#aboutDialog" data-rel="popup" data-icon="info" class="ui-btn-right" data-position-to="window" data-role="button" data-inline="true" data-transition="flow">About</a>
+			<div id="navbar" data-role="navbar">
+				<ul class="">
+					<li><a href="#" id="icon-plane" data-icon="custom">რეისები</a></li>
+					<li><a href="#" id="icon-blog" data-icon="custom">ბლოგი</a></li>
+					<li><a href="#" id="icon-info" data-icon="custom">ინფორმაცია</a></li>
+				</ul>
+			</div><!-- /navbar -->
+			<div data-role="content" data-theme="a" id="page-info-side">
+				<div id="src-contain" style="zoom: 0.85">
+				Loading info...
+				</div>
+			</div>
+			<div style="clear:both;"></div>
+		</div><!-- /header -->
+	</div>
+		<!--<div id="pseudo_header" data-role="header"></div>-->
+	<div id="separator-b">
+		<div data-role="content" data-theme="a">
+			<div id="page-flights">
+				<ul data-role="listview" data-inset="true" data-filter="true" data-theme="a">
+					<li data-icon="refresh" class="loader-li"><a data-icon="refresh">იტვირთება...</a></li>
+				</ul>
+			</div>
+			<div id="page-blog">
+				<ul data-role="listview" data-inset="true" data-theme="a">
+					<li data-icon="refresh" id="loader-flights" class="loader-li"><a data-icon="refresh">იტვირთება...</a></li>
+				</ul>
+			</div>
+			<div id="page-info" data-theme="a">
+				<big><b>USA2GEORGIA</b></big>
+				<br/>
+				თბილისი, ქავთარაძის ქ. 27 <a href="geo:41.720647,44.734024?z=19" class="icon-map" data-role="button" data-icon="custom" data-iconpos="left" data-mini="true" data-inline="true">რუკა</a><br/>
+				თბილისი, მიცკევიჩის ქ. 27<a href="geo:41.724445,44.761819?z=19" class="icon-map" data-role="button" data-icon="custom" data-iconpos="left" data-mini="true" data-inline="true">რუკა</a><br/>
+				<br/>
+				(+995 32) 2-42-18-18<a href="tel:0322421818" class="icon-call" data-role="button" data-icon="custom" data-iconpos="left" data-mini="true" data-inline="true">დარეკვა</a>
+				<br/>
+				(+995 32) 2-19-20-80<a href="tel:0322192080" class="icon-call" data-role="button" data-icon="custom" data-iconpos="left" data-mini="true" data-inline="true">დარეკვა</a>
+				<br/>
+				<br/>
+				<img src="res/drawable/ic-mail.png" alt="" width="16" height="16" />
+				<a href="mailto:sales@usa2georgia.com">sales@usa2georgia.com</a>
+				<br/>
+				<img src="res/drawable/ic-globe.png" alt="" width="16" height="16" />
+				<a href="http://usa2georgia.com" target="_blank">www.usa2georgia.com</a>
+				<br/>
+				<b>სამუშაო საათები</b><br/>
+				ორშ-პარ: 10:00-18:30<br/>შაბ: 11:00-15:00
+			</div>
+		</div><!-- /content -->
+	</div>
+	
+	<!--	Banner
+	
+	<div id="banner-1">
+		<div class="banner_small">
+			<script type="text/javascript" src="http://ad.leadboltmobile.net/show_app_ad.js?section_id=619330332"></script>
+		</div>
+	</div>
+	-->
+	
+	<div data-role="popup" id="aboutDialog" _data-overlay-theme="a" data-theme="c" style="max-width:400px;" class="ui-corner-all">
+		<div data-role="header" data-theme="b" class="ui-corner-top">
+			<h1>აპლიკაციის შესახებ</h1>
+		</div>
+		<div data-role="content" data-theme="d" class="ui-corner-bottom ui-content">
+			<h3 class="ui-title">USA2Georgia Mobile v1.1.2</p>
+			<p>პროგრამის ავტორი: Stichoza (stichoza.com)</p>
+			<p>აპლიკაცია არ არის ოფიციალური. გამოყენებული ინფორმაცია აღებულია usa2georgia.com-ის საჯარო არხებიდან.</p>
+			<p>პროგრამასთან დაკავშირებული კითხვები, რჩევები და შენიშვნები გამოაგზავნეთ მისამართზე android@stichoza.com სათაურში მიუთითეთ პროგრამის სახელი.</p>
+			<a href="#" data-role="button" data-inline="true" data-rel="back" data-theme="c">დახურვა</a>    
+			<a href="mailto:android@stichoza.com?subject=USA2Georgia Mobile" data-role="button" data-inline="true" _data-rel="back" data-theme="b" data-icon="custom" id="about-btn-mailto">წერილის გაგზავნა</a>
+		</div>
+	</div>
+	
+</div><!-- /page -->
+</body>
+</html>

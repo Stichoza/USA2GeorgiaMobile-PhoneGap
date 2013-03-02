@@ -1,0 +1,55 @@
+#navbar .ui-btn .ui-btn-inner {
+	padding-top: 40px !important;
+}
+
+#navbar .ui-btn .ui-icon {
+	width: 30px!important;
+	height: 30px!important;
+	margin-left: -15px !important;
+	box-shadow: none!important;
+	-moz-box-shadow: none!important;
+	-webkit-box-shadow: none!important;
+	-webkit-border-radius: 0 !important;
+	border-radius: 0 !important;
+}
+
+#icon-plane .ui-icon {
+	background: url(../drawable/ic-plane.png) 50% 50% no-repeat;
+	background-size: 32px 32px;
+}
+
+#icon-blog .ui-icon {
+	background: url(../drawable/ic-list.png) 50% 50% no-repeat;
+	background-size: 32px 32px;
+}
+
+#icon-info .ui-icon {
+	background: url(../drawable/ic-contact.png) 50% 50% no-repeat;
+	background-size: 32px 32px;
+}
+
+#icon-plane.ui-btn-active .ui-icon {
+	background-image: url(../drawable/ic-plane-selected.png) !important;
+}
+
+#icon-blog.ui-btn-active .ui-icon {
+	background-image: url(../drawable/ic-list-selected.png) !important;
+}
+
+#icon-info.ui-btn-active .ui-icon {
+	background-image: url(../drawable/ic-contact-selected.png) !important;
+}
+
+.icon-map .ui-icon {
+	background: url(../drawable/ic-place.png) 50% 50% no-repeat;
+	background-size: 16px 16px;
+}
+.icon-call .ui-icon {
+	background: url(../drawable/ic-contact.png) 50% 50% no-repeat;
+	background-size: 16px 16px;
+}
+
+#about-btn-mailto .ui-icon {
+	background: url(../drawable/ic-mail.png) 50% 50% no-repeat;
+	background-size: 16px 16px;
+}

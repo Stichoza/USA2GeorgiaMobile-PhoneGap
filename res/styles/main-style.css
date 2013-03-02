@@ -1,0 +1,183 @@
+/* FONTS */
+@font-face {  
+  font-family: "BPG ExtraSquare";  
+  src: url("../fonts/bpg_extrasquare_2009.ttf") format("truetype");  
+}
+
+@font-face {  
+  font-family: "BPG Algeti Compact";  
+  src: url("../fonts/bpg_algeti_compact.ttf") format("truetype");  
+}
+
+
+/* --- */
+
+* {
+	font-family: "BPG Algeti Compact";
+}
+
+body {
+	overflow-x: hidden;
+}
+
+#page-info, #page-info-side {
+	/*font-family: "BPG Phone Sans";*/
+}
+
+.flight-number {
+	font-family: Georgia;
+}
+
+.flight-text {
+	font-family: "BPG Algeti Compact", 'sans-serif';
+	font-size: small;
+}
+
+#navbar  ul li a, #navbar * {
+	font-family: "BPG ExtraSquare", 'sans-serif' !important;
+}
+
+
+#header {
+	border-bottom: none !important;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+}
+
+#pseudo_header  {
+	opacity: 0;
+	width: 1px;
+}
+
+#separator-a, #separator-b {
+	display: block;
+	width: 100%;
+	float: none;
+	top: 0px;
+	left: 0px;
+	overflow-x: hidden;
+}
+#separator-a {
+	position: fixed;
+	z-index: 500;
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3) !important;
+	border-bottom: 1px solid #e07b0e;
+}
+#separator-b {
+	position: absolute;
+	top: 152px;
+	left: 0px;
+	z-index: 400;
+	padding-bottom: 60px;
+}
+
+#navbar {
+	border-bottom: 5px solid #f7931e;
+}
+
+.banner_small {
+	height: 50px;
+	width: 320px;
+	overflow:hidden;
+	border: none;
+}
+
+#banner-1 {
+	position: fixed;
+	z-index: 900;
+	bottom: 0px;
+	left: 0px;
+	height: 50px;
+	width: 100%;
+	border: none;
+}
+#banner-1 .banner_small {
+	margin: 0px auto;
+}
+
+#page-info-side {
+	display: none;
+	font-weight: normal;
+	overflow-y: auto;
+}
+#page-info-side h1, #page-info-side h2, #page-info-side h3, #page-info-side h4, #page-info-side h5, #page-info-side h1 {
+	font-weight: bold;
+}
+
+div[data-role="page"] {
+	background: #F9F9F9 !important;
+	width: 100%;
+	position: absolute;
+	border: none;
+}
+
+.ui-li-count {
+	top: 18px !important;
+}
+
+@media (max-height : 370px) {
+	#navbar .ui-btn .ui-btn-inner {
+		padding-top: 10px !important;
+	}
+	#navbar .ui-icon {
+		background-size: 0px !important;
+	}
+	#separator-b {
+		top: 128px;
+	}
+}
+
+@media (min-width : 640px) and (orientation: landscape) {
+	#header {
+		float: left;
+		width: 320px;
+		overflow-x: hidden;
+		border-bottom: none;
+	}
+	#page-info-side {
+		display: block;
+		background: #F9F9F9;
+		/*float: left;*/
+		width: 300px;
+		overflow-x: hidden;
+		margin: 0px;
+		padding: 10px;
+	}
+	
+	#banner-1 {
+		width: 320px;
+	}	
+	
+	#separator-a, #separator-b {
+		float: left;
+		overflow-x: hidden;
+	}
+	#separator-a {
+		float: none;
+		width: 320px;
+		height: 100%;
+		overflow: hidden;
+		/*border-right: 1px solid #f7931e;*/
+	}
+	#separator-b {
+		width: auto;
+		position: absolute;
+		left: 320px;
+		top: 0px;
+		right: 0px;
+		padding-bottom: 0px;
+	}
+	
+	#navbar ul li{
+		width: 50%;
+	}
+	#navbar ul li:last-child {
+		display: none;
+	}
+	#content {
+		/*float: left;
+		clear: right;*/
+		width: 320px;
+	}
+}
