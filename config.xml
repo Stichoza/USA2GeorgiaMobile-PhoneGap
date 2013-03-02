@@ -3,8 +3,8 @@
 	<widget xmlns = "http://www.w3.org/ns/widgets"
 	xmlns:gap = "http://phonegap.com/ns/1.0"
 	id        = "com.stichoza.usa2georgia"
-	versionCode="5" 
-	version   = "1.2.0">
+	versionCode="6" 
+	version   = "1.2.1">
 	
 	<name>USA2Georgia Mobile</name>
 	<description>An unofficial app for USA2Georgia.com flight schedule and blog posts.</description>
@@ -30,6 +30,7 @@
 	
 	<access origin="http://stichoza.com" subdomains="true" />
 	<access origin="*usa2georgia.com" browserOnly="true"/> 
-	<!-- <access origin="*" /> -->
+
+	<preference name="android-installLocation" value="auto" />
 	
 </widget>
